@@ -1,17 +1,27 @@
 {
+  "homepage": "http://kamilmoskal.github.io/react-weather-app",
   "name": "react-weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apexcharts": "^2.5.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.23.0",
     "react": "^16.7.0",
+    "react-apexcharts": "^1.2.1",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-redux": "^6.0.0",
+    "react-scripts": "2.1.2",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
