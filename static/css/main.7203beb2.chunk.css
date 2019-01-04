@@ -1,0 +1,2 @@
+body{margin:0;padding:0}.card{text-align:center}.card.day:hover{background-color:#f0f0f0;cursor:pointer}.card.active{border:2px solid #8bc1ed}.card-content img{width:100%;display:block;margin:0 auto}div.temp{display:block}span.high,span.low{display:inline-block}span.low{color:grey}.input-field{display:inline-block}.btn-large{width:100%}.input-field textarea:focus+label{color:#8bc1ed!important}.row .input-field textarea:focus{border-bottom:1px solid #8bc1ed!important;box-shadow:0 1px 0 0 #8bc1ed!important}
+/*# sourceMappingURL=main.7203beb2.chunk.css.map */
