@@ -19,27 +19,23 @@ console.log(mostAppearingDiscriptionInArray, props.day.name)
 //// standard weather mian/discription which i can get from API
 const whichIconNumberLoad = () => {
   if (mostAppearingDiscriptionInArray === 'Light snow'){
-    return '13d'
+    return 'snowy'
   } else if (mostAppearingDiscriptionInArray === 'Clear'){
-    return '01d'
+    return 'sunny'
   } else if (mostAppearingDiscriptionInArray === 'Clouds'){
-    return '02d'
+    return 'partlycloudy'
   } else if (mostAppearingDiscriptionInArray === 'Scattered clouds'){
-    return '03d'
-  } else if (mostAppearingDiscriptionInArray === 'Broken clouds'){
-    return '04d'
+    return 'cloudy'
   } else if (mostAppearingDiscriptionInArray === 'Shower rain'){
-    return '09d'
+    return 'pouring'
   } else if (mostAppearingDiscriptionInArray === 'Rain'){
-    return '10d'
+    return 'pouring'
   } else if (mostAppearingDiscriptionInArray === 'Thunderstorm'){
-    return '11d'
+    return 'lightning'
   } else if (mostAppearingDiscriptionInArray === 'Snow'){
-    return '13d'
-  } else if (mostAppearingDiscriptionInArray === 'Mist '){
-    return '50d'
+    return 'snowy'
   } else {
-    return '10d'
+    return 'cloudy'
   }
 }
   return (
@@ -49,7 +45,7 @@ const whichIconNumberLoad = () => {
       <div className={`card day col s6 m3 l2 ${props.chart === props.day.name ? 'active': null}`} onClick={() => {props.changeChart(props.day)}}>
                 <div className="card-content">
                   <div className="title flow-text">{props.day.name}</div>
-                  <img src={(`https://openweathermap.org/img/w/${whichIconNumberLoad()}.png`)} alt="icon"></img>
+                  <img src={require(`../img/weather-${whichIconNumberLoad()}.png`)} alt="icon"></img>
                   <div className="temp flow-text">
                       <span className="high">{Math.round(Math.max(...props.day.temp_max))}°</span>
                       <span className="low">{Math.round(Math.min(...props.day.temp_min))}°</span>
