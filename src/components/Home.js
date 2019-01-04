@@ -32,17 +32,17 @@ class Home extends Component {
       <div className="container row">
         
         <div className="card red-white col s12 m12 l12"> 
-          <form action="" onSubmit={this.handlerClick}>
+          <form onSubmit={this.handlerClick}>
             <div className="input-field col s12 m6 ">
-              <textarea id="name" className="materialize-textarea" onChange={this.handlerChange}></textarea>
+              <input id="name" type="text" onChange={this.handlerChange}/>
               <label htmlFor="name">City Name</label>
             </div>
             <div className="input-field col s6 m4">
-              <textarea id="code" className="materialize-textarea" onChange={this.handlerChange}></textarea>
+            <input id="code" type="text" onChange={this.handlerChange}/>
               <label htmlFor="code">Country Code</label>
             </div>
             <div className="input-field col s6 m2">
-              <div className="waves-effect waves-light btn-large light-blue lighten-2" onClick={this.handlerClick}><i className="material-icons">search</i></div>
+              <button type="submit" className="waves-effect waves-light btn-large light-blue lighten-2" onClick={this.handlerClick}><i className="material-icons">search</i></button>
             </div>
           </form>
         </div>
